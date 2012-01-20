@@ -1,0 +1,19 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DemoMaster.master.cs" Inherits="MasterPages_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <title>jQuery.Net Demo - <%= Page.Title%></title>
+    <asp:ContentPlaceHolder id="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <a href="../Default.aspx"><< Back to Demo List</a>
+    <h1><%= Page.Title%> Demo</h1>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+    </div>
+    </form>
+</body>
+</html>

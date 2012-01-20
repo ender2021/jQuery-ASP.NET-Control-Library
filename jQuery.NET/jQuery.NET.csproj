@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D40BE5C-6ADD-4E09-94C4-3D15F9573A8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>jQuery.NET</RootNamespace>
+    <AssemblyName>jQuery.NET</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json.Net35, Version=4.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\sa21\SANCTUM\ThirdParty\Libraries\Json.NET\4.0.0.0\Bin\Net35\Newtonsoft.Json.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Base Classes\jTextBoxControl.cs" />
+    <Compile Include="Controls\Base Classes\jListBoxControl.cs" />
+    <Compile Include="Controls\jAccordion\jAccordion.cs" />
+    <Compile Include="Controls\jAccordion\jAccordionPanel.cs" />
+    <Compile Include="Controls\jAutoComplete\jAutocomplete.cs" />
+    <Compile Include="Controls\jCycle\jCycle.cs" />
+    <Compile Include="Controls\jDualListBox\jDualListBox.cs" />
+    <Compile Include="Controls\jFancyBox\jFancyBox.cs" />
+    <Compile Include="Controls\jFancyBox\jFancyBoxContent.cs" />
+    <Compile Include="Controls\jPhotoGallery\jPhotoGallery.cs" />
+    <Compile Include="Interfaces\IjControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\BaseActionList.cs" />
+    <Compile Include="Utility\EnumerationExtensions.cs" />
+    <Compile Include="Utility\ImageTemplate.cs" />
+    <Compile Include="Utility\jControlHelper.cs" />
+    <Compile Include="Controls\Base Classes\jGenericControl.cs" />
+    <Compile Include="Utility\jQueryUI.cs" />
+    <Compile Include="Utility\NetJson.cs" />
+    <Compile Include="Utility\ResourceFinder.cs" />
+    <Compile Include="Utility\jWebResource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="img\classic_loader.gif" />
+    <EmbeddedResource Include="img\classic_map.png" />
+    <EmbeddedResource Include="img\jPhotoGallery.bmp" />
+    <EmbeddedResource Include="js\galleria_1_2_2_min.js" />
+    <EmbeddedResource Include="js\galleria_classic_min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="css\galleria_classic_min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="css\dualListBox_min.css" />
+    <EmbeddedResource Include="img\dlb_button_bg.png" />
+    <EmbeddedResource Include="img\dlb_button_map.png" />
+    <EmbeddedResource Include="img\jDualListBox.bmp" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="js\dualListBox_2_0_min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="js\cycle_all_min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="img\jCycle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="css\cycle_min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="img\fancybox\blank.gif" />
+    <EmbeddedResource Include="img\fancybox\fancybox.png" />
+    <EmbeddedResource Include="img\fancybox\fancybox_x.png" />
+    <EmbeddedResource Include="img\fancybox\fancybox_y.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_close.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_loading.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_nav_left.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_nav_right.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_shadow_e.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_shadow_n.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_shadow_ne.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_shadow_nw.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_shadow_s.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_shadow_se.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_shadow_sw.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_shadow_w.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_title_left.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_title_main.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_title_over.png" />
+    <EmbeddedResource Include="img\fancybox\fancy_title_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="js\fancybox_1_3_4_min.js" />
+    <EmbeddedResource Include="js\mousewheel_3_0_4_min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="css\fancybox_1_3_4_min.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="img\jFancyBox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="img\jFancyBoxContent.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="img\jAccordion.bmp" />
+    <EmbeddedResource Include="img\jAccordionPanel.bmp" />
+    <EmbeddedResource Include="img\jAutocomplete.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
